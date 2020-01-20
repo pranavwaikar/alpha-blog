@@ -1,0 +1,6 @@
+  <%-# Here we are handling flash msgs for every view -%>
+  <% flash.each do |name,msg| %>
+    <ul>
+      <li> <%= msg%> <li>
+    </ul>
+  <% end %>
