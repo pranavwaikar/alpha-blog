@@ -1,0 +1,7 @@
+<h2> Showing selelcted article </h2>
+
+<p> Tiltle: <%= @article.title %> </p>
+<p> Description: <%= @article.description %> </p>
+
+<%= link_to "Edit this article" , edit_article_path(@article) %> |
+<%= link_to "Back to Index" , articles_path %>
