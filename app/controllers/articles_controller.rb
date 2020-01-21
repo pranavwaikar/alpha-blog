@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     # Because of strong params we need a private permission function
     @article = Article.new(article_params)
     if @article.save
-      flash[:notice] = "Article was successfully created! updated one"
+      flash[:notice] = "Article was successfully created! updated one again"
       redirect_to article_path(@article)
     else
       render 'new'
